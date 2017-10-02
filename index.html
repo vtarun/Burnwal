@@ -1,0 +1,117 @@
+<!doctype html>
+<html ng-app="BurnwalX">
+	<head>
+		<title>Burnwal's Food</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.css" />
+		<!-- <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Courgette|Damion|Great+Vibes|Sacramento|Satisfy" rel="stylesheet">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>		
+		<script src="js/angular.js"></script>
+		<script src="js/angular-route.js"></script>
+		<script src="js/script.js"></script>	
+	</head>
+	<body  ng-controller="foodController">
+		<div class="container-fliud" style="background-color: black;">
+			<nav-bar-directive></nav-bar-directive>
+			<div class="sect sectOne">				
+				<div class="image-heading">
+					<h1>Burnwal's Taste</h1>						
+				</div>						
+			</div>
+			<div class="subSection">
+				<div id="breakfast">
+					<h2>Breakfast</h2>
+					<div ng-repeat="item in breakfast track by $index" class="food">
+						<div class="food-items">
+							<div class="veg-nonveg">
+								<div class="category"></div>
+							</div>
+							<div class="food-item-details">
+								<img src="{{item.image}}" style="width:100%;height:100%;" />
+							</div>													
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sect2 sectTwo"></div>
+			<div class="subSection"> <!-- sect sectTwo"> -->
+				<div id="meals">
+					<h2>Meals</h2> 
+					<div ng-repeat="item in meals track by $index" class="food">
+						<div class="food-items">
+							<div class="veg-nonveg">
+								<div class="category"></div>
+							</div>
+							<div class="food-item-details">
+								<img src="{{item.image}}" style="width:100%;height:auto;" />
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sect2 sectThree"></div>
+			<div class="subSection">
+				<div id="beverage">
+					<h2>Beverage</h2>
+					<div ng-repeat="item in beverage track by $index" class="food">
+						<div class="food-items">
+							<div class="veg-nonveg">
+								<div class="category"></div>
+							</div>
+							<div class="food-item-details">
+								<img src="images/tea-1.jpg" style="width:100%;height:auto;" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="sect sectThree"></div> -->
+			<!-- <div class="sect2 sectFour">
+				<div class="address">
+					<h4>51 Area, Hinjewadi, Pune</h4>
+					<h4>0124568945</h4>
+					<h4>vivek.tarun17@gmail.com</h4>
+				</div>
+				
+				<div class="reservation" style="float:right">
+					<label style="color:white">RESEVATION</label>
+					<div class="reserve-date-div">			      		
+			      		<button class="date-dropdown-btn">Date &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></button>
+			      		<div class="date-dropdown-content">
+			      			<a href="#">Link 1</a>
+			    			<a href="#">Link 2</a>
+			    			<a href="#">Link 3</a>
+			      		</div>
+			        </div>		
+					<div class="reserve-time-div">
+						
+					</div>
+				</div>
+			</div>	 -->			
+			<footer id="contact">			
+				<!-- <footer-directive></footer-directive>						 -->
+				<div class="reservation" style="display: block;border:1px solid red; ">	
+					<div class="reserve-address-div" style="display: inline-block;width:45%;border:1px solid red;">		
+						<div style="margin-left: 20px;">
+							<p>51 Area, Barmuda Triangle, Mars</p>
+							<p>0165466546</p>
+							<p>vivek.tarun17@gmail.com</p>		
+						</div>
+					</div>
+					<div class="reserve-booking-div" style="display: inline-block; width:45%;border:1px solid red; ">			      		
+				  		<form style="width:80%">
+						  	<input type="text"  name="name" placeholder="Name" class="reserve-form-data" /><br>		  	
+						  	<input type="email" name="email" placeholder="Email" class="reserve-form-data" /><br>
+						  	<input type="text"  name="subject" placeholder="Subject" class="reserve-form-data" /><br>
+						  	<textarea placeholder="message" rows="5" style="resize: none;" class="reserve-form-data" ></textarea><br>
+						  	<input  type="button" value="Submit"  class="reserve-form-data" style="width:66px;margin-left: 500px;"/ >
+						</form>	    
+				    </div>	
+				</div>
+			</footer>	
+		</div>		
+	</body>
+</html>
