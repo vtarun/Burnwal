@@ -12,13 +12,23 @@ nav-bar-directive{
 	/*background-color:#b94646;*/
 	/*background-color: rbga(0,0,0,0.5);*/
 }
+.navbarFontStyle{
+	font-size:20px;
+	font-family: 'Courgette', cursive;
+}
+div.navbarHeaderStyle{
+	margin-left:20%;
+}
 #navbar-custom-position{
-	margin-left: 50%;
+	/*margin-left: 50%;*/
     width: 46%;    
 }
 #navbar-custom-position  li{
-	margin-left: 5%;
-    margin-right: 5%;
+	margin-left: 2%;
+    /*margin-right: 2%;*/
+}
+.navbar-right{
+	margin-right:145px;
 }
 div.sect{
 	height:800px;
