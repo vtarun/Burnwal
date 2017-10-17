@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" ng-controller="navBarController">
   <div class="container-fluid">
     <div class="navbar-header" style="margin-left:20%;">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu_list" aria-expanded="false">
@@ -7,46 +7,35 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand navbarFontStyle" href="#">
+      <a class="navbar-brand navbarFontStyle" href="/Burnwal/home">
         <img alt="Home" src="...">
       </a>
     </div>
 
     <div class="collapse navbar-collapse " id="menu_list">      
       <ul class="nav navbar-nav" id="navbar-custom-position">       
-        <li class="dropdown">
-          <a href='#' class="dropdown-toggle navbarFontStyle" data-toggle="dropdown" 
-            role="button" aria-haspopup="true" aria-expanded="false">Food<span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#breakfast">Breakfast</a></li>
-            <li><a href="#meals">Meals</a></li>
-            <li><a href="#beverage">Beverage</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Today's Special</a></li>
-          </ul>
-        </li>
-        <li class="navbarFontStyle"><a href="#">Blog</a></li>
-        <li class="navbarFontStyle"><a href="#contact">Contact Us</a></li>
+        <li class="navbarFontStyle"><a href="/Burnwal/menu">Menu</a></li>
+        <li class="navbarFontStyle"><a href="/Burnwal/blog">Blog</a></li>
+        <li class="navbarFontStyle"><a href="/Burnwal/contactus">Contact Us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li style="margin-top:7px;margin-left:10px;">
-          <a href="https://www.facebook.com/vivektarun" target="_blank" style="padding:3px 9px;">
+        <li>
+          <a href="https://www.facebook.com/vivektarun" target="_blank">
             <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
           </a>
         </li>
-        <li style="margin-top:7px;margin-left:10px;">
-          <a href="https://twitter.com/TARUNVIVEK" target="_blank" style="padding:3px 9px;">
+        <li>
+          <a href="https://twitter.com/TARUNVIVEK" target="_blank">
             <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
           </a>
         </li>        
-        <li style="margin-top:7px;margin-left:10px;">
-          <a href="https://codepen.io/vtarun/" target="_blank" style="padding:3px 9px;">
+        <li>
+          <a href="https://codepen.io/vtarun/" target="_blank">
             <i class="fa fa-codepen fa-2x" aria-hidden="true"></i>
           </a>
         </li>
-        <li style="margin-top:7px;margin-left:10px;">
-          <a href="https://github.com/vtarun" target="_blank" style="padding:3px 9px;">
+        <li>
+          <a href="https://github.com/vtarun" target="_blank">
             <i class="fa fa-github fa-2x" aria-hidden="true"></i>
           </a>
         </li>

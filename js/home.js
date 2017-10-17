@@ -1,0 +1,3 @@
+Teja.controller('HomeController', function(){
+
+});
