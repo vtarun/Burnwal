@@ -10,65 +10,286 @@
 </script>>
 <div class="container-fluid" style="background-color: #5F0038;">
 	<nav id="sidebar">
-                <div class="sidebar-header">
-                    <h3>Bootstrap Sidebar</h3>
-                </div>
+        <div class="sidebar-header">
+            <h3>Bootstrap Sidebar</h3>
+        </div>
 
-                <ul class="list-unstyled components">
-                    <p>Dummy Heading</p>
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#">Home 1</a></li>
-                            <li><a href="#">Home 2</a></li>
-                            <li><a href="#">Home 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li><a href="#">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+        <ul class="list-unstyled components">
+            <p>Dummy Heading</p>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li><a href="#">Home 1</a></li>
+                    <li><a href="#">Home 2</a></li>
+                    <li><a href="#">Home 3</a></li>
                 </ul>
-
-                <ul class="list-unstyled CTAs">
-                    <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a></li>
-                    <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a></li>
+            </li>
+            <li>
+                <a href="#">About</a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
                 </ul>
-            </nav>
-            <div id="content">
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        
+    </nav>
+    <div id="content">
         <!-- We'll fill this with dummy content -->
         <div class="" style="margin-top:30px;">
 		<a href="#meals">Meals</a>
 
 	</div>	
-	<div class="subSection">
-		<div id="breakfast">
-			<h2>Breakfast</h2>
-			<div ng-repeat="item in breakfast track by $index" class="food">
-				<div class="food-items">
-					<div class="veg-nonveg">
-						<div class="category"></div>
+	<div class="sect2 sectTwo">
+		<h2>Breakfast</h2>
+	</div>
+	<div class="subSection" style="border: 1px solid red;">
+		<div id="breakfast" style="border: 1px solid green;overflow: hidden;margin-left: auto; margin-right: auto;">			
+			<!-- <div ng-repeat="item in breakfast track by $index" class="food"> -->
+			<div class="food">
+				<div class="col-md-3 col-sm-12  row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Idli (2 Nos)</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
 					</div>
-					<div class="food-item-details" style="display: inline-block;overflow: hidden;">
-						<img src="{{item.image}}" style="width:100%;height:100%;" />
+					<div class="pull-right">
+						<code>25</code>
 					</div>
-					<div style="display: inline-block;">
-						<p style="margin-bottom: 0px;margin-top:0px;">Dosa</p>
-						<p style="margin-bottom: 0px;margin-top:0px;">Price</p>
-					</div>													
 				</div>
-			</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Sambar Idli (2 Nos)</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>30</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Vada</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>40</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Sambar Vada</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>45</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Plain Dosa</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>40</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Onion Dosa</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>45</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Rava Dosa</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>45</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Onion Rava Dosa</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>50</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Masala Rava Dosa</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>55</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Karan Dosa</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>45</code>
+					</div>
+				</div>
+				<div class="col-md-3" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div>
+						<code>Pesara Dosa</code>
+						<span style="color:white;font-weight: bold;"> ......................... </span>
+						<div class="pull-right">
+							<code>45</code>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Ghee Dosa</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>45</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Homely Dosa</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>40</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Egg Dosa</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>50</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Uttapam</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>50</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Onion Uttapam</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>45</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Mysore Bajji (4 Nos)</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>40</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Upma</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>40</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Puri</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>50</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Kaju Upma</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>50</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Punugu (4 Nos)</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>40</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Set Dosa (3 Nos)</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>40</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Butter Idli</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>50</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Ghee Idli</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>50</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Mini Idli Sambar</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>40</code>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 row" style="display:inline-block;margin:10px;border: 1px solid red;">
+					<div class="pull-left">
+						<code>Cheese Dosa</code>
+						<span style="color:white;font-weight: bold;"> ....................... </span>
+					</div>
+					<div class="pull-right">
+						<code>50</code>
+					</div>
+				</div>
+			</div>	
 		</div>
 	</div>
 	<div class="sect2 sectTwo"></div>
@@ -81,7 +302,7 @@
 						<div class="category"></div>
 					</div>
 					<div class="food-item-details">
-						<img src="{{item.image}}" style="width:100%;height:auto;" />
+						<img src="item.image" style="width:100%;height:auto;" />
 					</div>							
 				</div>
 			</div>
