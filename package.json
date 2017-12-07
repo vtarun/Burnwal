@@ -1,0 +1,25 @@
+{
+  "name": "burnwal",
+  "version": "1.0.0",
+  "description": "a food website ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines" :{
+    "node":  "8.9.x",
+    "npm" : "4.5.x"
+  },
+  "author": "vivek tarun",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.6",
+    "morgan": "^1.9.0",
+    "nodemailer": "^4.4.0",
+    "nodemon": "^1.12.1"
+  }
+}

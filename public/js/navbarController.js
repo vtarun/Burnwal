@@ -1,0 +1,3 @@
+Teja.controller('navBarController', function(){
+	
+});
