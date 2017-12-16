@@ -1,11 +1,10 @@
-// Create a port for server to listen on
-
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3000	;
 
 var express = require('express');
 var morgan =  require('morgan');
 var bodyParser = require('body-parser');
 var dotenv =  require('dotenv');
+var config = require('./config');
 var breakfast = require('./routes/breakFastRoute');
 
 //Create an express application
@@ -14,6 +13,7 @@ var app = express();
 
 //Load in environment variable
 dotenv.config({ verbose: true });
+
 
 
 

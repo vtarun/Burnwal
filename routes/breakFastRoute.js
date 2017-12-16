@@ -1,5 +1,6 @@
 var express = require('express');
 var nodemailer = require('nodemailer');
+var User = require('../models/collections')
 var route = express.Router();
 
 var fuckInfy = {
@@ -24,9 +25,53 @@ var smtpTransport = nodemailer.createTransport({
 	}
 });
 
-route.get('/', function(req, res){
-	res.send('hello route');
+route.get('/', function(req, res){	
+	var software = req.headers['user-agent'];
+	// 
+	res.json({'ip' : req.connection.remoteAddress , 'language' : (req.headers['accept-language']).split(',')[0], "software": software.substring(software.indexOf('(') + 1,software.indexOf(')')) });
 });
+
+
+
+route.post('/test', function(req, res){
+	var user = User({
+		name : 't',
+		username : 'v',
+		password : 'hello'
+	});
+
+	user.save(function(err){
+		if(err){
+			res.send(err);
+			return ;
+		}
+		res.json({message : 'user inserted'})
+	});
+});
+
+route.get('/users', function(req, res){
+	User.find({}, function(err, result){
+		res.json(result)
+	})
+});
+
+route.get('/:id', function(req, res){
+	var date = req.params.id.match(/^[0-9]{1,}$/g);
+	if(date == null){
+		var d = new Date(req.params.id);
+	}else{
+		var d = new Date(parseInt(req.params.id));
+	}	
+		
+	if(d != 'Invalid Date'){
+		res.json(d.getTime() +'-----'+ d.toDateString());	   
+	}
+	else{
+		res.json('Unix : null, Natural : null');	
+	}	
+});
+
+
 
 route.get('/all', function(req, res){
 	res.send(fuckInfy);
